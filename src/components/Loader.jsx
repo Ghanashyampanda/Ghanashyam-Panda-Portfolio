@@ -46,10 +46,14 @@ export default function Loader({ onFinish }) {
               initial={{ scale: 0.8, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               transition={{ duration: 0.5, ease: 'easeOut' }}
-              className="mb-8 relative flex items-center justify-center w-16 h-16 rounded-xl border border-blue-500/30 bg-blue-500/5 glow-text"
+              className="mb-8 relative flex items-center justify-center w-20 h-20 rounded-2xl border border-blue-500/20 bg-blue-500/5 overflow-hidden"
             >
-              <div className="absolute inset-0 bg-blue-500/10 rounded-xl blur-md animate-pulse" />
-              <span className="text-2xl font-bold font-display text-blue-400">GP</span>
+              <div className="absolute inset-0 bg-blue-500/10 rounded-2xl blur-md animate-pulse" />
+              <img 
+                src="/images/logo.jpg" 
+                alt="GP Logo" 
+                className="w-full h-full object-cover relative z-10"
+              />
             </motion.div>
 
             {/* Title */}

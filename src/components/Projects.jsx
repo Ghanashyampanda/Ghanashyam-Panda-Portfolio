@@ -49,7 +49,7 @@ function ProjectCard({ project }) {
         onMouseMove={handleMouseMove}
         onMouseLeave={handleMouseLeave}
         onMouseEnter={handleMouseEnter}
-        className="relative group rounded-3xl glass border border-zinc-200 dark:border-zinc-800 bg-white/80 dark:bg-zinc-955/20 overflow-hidden transition-all duration-300 hover:border-blue-500/35 shadow-lg shadow-black/5 dark:shadow-black/20 flex flex-col h-full cursor-pointer"
+        className="relative group rounded-3xl glass border border-zinc-200 dark:border-zinc-800 bg-white/80 dark:bg-zinc-900/20 overflow-hidden transition-all duration-300 hover:border-blue-500/35 shadow-lg shadow-black/5 dark:shadow-black/20 flex flex-col h-full cursor-pointer"
         style={{ transformStyle: 'preserve-3d' }}
       >
         {/* Project Thumbnail Image Container */}
@@ -83,18 +83,18 @@ function ProjectCard({ project }) {
             <h3 className="text-xl font-bold font-display text-zinc-900 dark:text-white mt-2 mb-3 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-300">
               {project.title}
             </h3>
-            <p className="text-sm text-zinc-605 dark:text-zinc-400 leading-relaxed font-sans">
+            <p className="text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed font-sans">
               {project.description}
             </p>
           </div>
 
           {/* Action Links */}
-          <div className="flex gap-4 mt-6 pt-4 border-t border-zinc-150 dark:border-zinc-850">
+          <div className="flex gap-4 mt-6 pt-4 border-t border-zinc-200 dark:border-zinc-800">
             <a
               href={project.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex-1 flex items-center justify-center gap-2 py-3 rounded-xl border border-zinc-200 dark:border-zinc-850 bg-zinc-100 dark:bg-zinc-950/40 hover:bg-zinc-200 dark:hover:bg-zinc-900 text-sm font-semibold font-poppins text-zinc-700 dark:text-zinc-300 hover:text-zinc-950 dark:hover:text-white transition-all duration-300"
+              className="flex-1 flex items-center justify-center gap-2 py-3 rounded-xl border border-zinc-200 dark:border-zinc-800 bg-zinc-100 dark:bg-zinc-900/40 hover:bg-zinc-200 dark:hover:bg-zinc-900 text-sm font-semibold font-poppins text-zinc-700 dark:text-zinc-300 hover:text-zinc-950 dark:hover:text-white transition-all duration-300"
             >
               <FiExternalLink className="w-4 h-4" />
               <span>Details</span>
@@ -103,7 +103,7 @@ function ProjectCard({ project }) {
               href="https://github.com/Ghanashyampanda"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center p-3 rounded-xl border border-zinc-200 dark:border-zinc-850 bg-zinc-100 dark:bg-zinc-955/40 hover:bg-zinc-200 dark:hover:bg-zinc-900 text-zinc-700 dark:text-zinc-350 hover:text-zinc-950 dark:hover:text-white transition-all duration-300"
+              className="flex items-center justify-center p-3 rounded-xl border border-zinc-200 dark:border-zinc-800 bg-zinc-100 dark:bg-zinc-900/40 hover:bg-zinc-200 dark:hover:bg-zinc-900 text-zinc-700 dark:text-zinc-300 hover:text-zinc-950 dark:hover:text-white transition-all duration-300"
               aria-label="GitHub Repo"
             >
               <FiGithub className="w-4 h-4" />
@@ -116,7 +116,7 @@ function ProjectCard({ project }) {
 }
 
 export default function Projects() {
-  const categories = ['All', 'Java', 'PHP', 'Web', 'Python']
+  const categories = ['All', 'Java', 'PHP', 'Full Stack(MERN)', 'Python']
 
   const projects = [
     {
@@ -202,7 +202,7 @@ export default function Projects() {
                 className={`px-6 py-2.5 rounded-xl font-poppins text-xs font-semibold uppercase tracking-wider transition-all duration-300 ${
                   activeCategory === category
                     ? 'bg-blue-600 text-white shadow-md shadow-blue-500/20'
-                    : 'text-zinc-650 dark:text-zinc-400 hover:text-zinc-950 dark:hover:text-white hover:bg-zinc-150/50 dark:hover:bg-zinc-900/50'
+                    : 'text-zinc-600 dark:text-zinc-400 hover:text-zinc-950 dark:hover:text-white hover:bg-zinc-200/50 dark:hover:bg-zinc-900/50'
                 }`}
               >
                 {category}
@@ -212,7 +212,7 @@ export default function Projects() {
 
           {/* Search Input */}
           <div className="relative max-w-sm w-full">
-            <FiSearch className="absolute left-4 top-1/2 -translate-y-1/2 text-zinc-550 dark:text-zinc-550 w-4 h-4" />
+            <FiSearch className="absolute left-4 top-1/2 -translate-y-1/2 text-zinc-400 dark:text-zinc-500 w-4 h-4" />
             <input
               type="text"
               placeholder="Search projects..."

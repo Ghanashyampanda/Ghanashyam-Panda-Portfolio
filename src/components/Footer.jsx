@@ -44,9 +44,13 @@ export default function Footer() {
         {/* Decorative Brand Icon */}
         <motion.div
           whileHover={{ scale: 1.05 }}
-          className="mb-6 flex items-center justify-center w-10 h-10 rounded-lg border border-zinc-800 bg-zinc-950/80 text-sm font-bold font-display text-zinc-400 select-none shadow-md shadow-black/10"
+          className="mb-6 flex items-center justify-center w-12 h-12 rounded-xl border border-zinc-800 bg-zinc-950/80 overflow-hidden shadow-md shadow-black/10"
         >
-          GP
+          <img 
+            src="/images/logo.jpg" 
+            alt="GP Logo" 
+            className="w-full h-full object-cover"
+          />
         </motion.div>
 
         {/* Brand Text */}

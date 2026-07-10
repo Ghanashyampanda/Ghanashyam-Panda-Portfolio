@@ -72,7 +72,7 @@ export default function Contact() {
   ]
 
   return (
-    <section id="contact-section" className="py-24 relative overflow-hidden bg-zinc-55/30 dark:bg-transparent">
+    <section id="contact-section" className="py-24 relative overflow-hidden bg-zinc-50/30 dark:bg-transparent">
       {/* Background decoration blur blobs */}
       <div className="absolute top-1/2 left-3/4 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] rounded-full bg-blue-500/5 blur-[120px] pointer-events-none" />
       <div className="absolute bottom-0 left-10 w-[400px] h-[400px] rounded-full bg-purple-500/5 blur-[120px] pointer-events-none" />
@@ -99,7 +99,7 @@ export default function Contact() {
             </h3>
 
             {/* Map Address */}
-            <div className="p-6 rounded-2xl glass border border-zinc-205 dark:border-zinc-800 bg-white/80 dark:bg-zinc-950/20 flex items-start gap-4">
+            <div className="p-6 rounded-2xl glass border border-zinc-200 dark:border-zinc-800 bg-white/80 dark:bg-zinc-950/20 flex items-start gap-4">
               <div className="p-3.5 rounded-xl bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-blue-600 dark:text-blue-400 flex items-center justify-center">
                 <FiMapPin className="w-5 h-5" />
               </div>
@@ -110,7 +110,7 @@ export default function Contact() {
             </div>
 
             {/* Phone */}
-            <div className="p-6 rounded-2xl glass border border-zinc-205 dark:border-zinc-800 bg-white/80 dark:bg-zinc-950/20 flex items-start gap-4">
+            <div className="p-6 rounded-2xl glass border border-zinc-200 dark:border-zinc-800 bg-white/80 dark:bg-zinc-950/20 flex items-start gap-4">
               <div className="p-3.5 rounded-xl bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-cyan-600 dark:text-cyan-400 flex items-center justify-center">
                 <FiPhone className="w-5 h-5" />
               </div>
@@ -123,13 +123,13 @@ export default function Contact() {
             </div>
 
             {/* Email */}
-            <div className="p-6 rounded-2xl glass border border-zinc-205 dark:border-zinc-800 bg-white/80 dark:bg-zinc-950/20 flex items-start gap-4">
+            <div className="p-6 rounded-2xl glass border border-zinc-200 dark:border-zinc-800 bg-white/80 dark:bg-zinc-950/20 flex items-start gap-4">
               <div className="p-3.5 rounded-xl bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-purple-600 dark:text-purple-400 flex items-center justify-center">
                 <FiMail className="w-5 h-5" />
               </div>
               <div>
                 <h4 className="font-display font-semibold text-zinc-800 dark:text-white text-sm">Email Address</h4>
-                <p className="text-sm text-zinc-605 dark:text-zinc-400 mt-1">
+                <p className="text-sm text-zinc-600 dark:text-zinc-400 mt-1">
                   <a href="mailto:ghanashyampanda07@gmail.com" className="hover:text-purple-600 dark:hover:text-purple-400 transition-colors duration-300 font-medium">
                     ghanashyampanda07@gmail.com
                   </a>
@@ -138,14 +138,14 @@ export default function Contact() {
             </div>
 
             {/* View Resume PDF */}
-            <div className="p-6 rounded-2xl glass border border-zinc-205 dark:border-zinc-800 bg-white/80 dark:bg-zinc-950/20 flex items-start gap-4">
+            <div className="p-6 rounded-2xl glass border border-zinc-200 dark:border-zinc-800 bg-white/80 dark:bg-zinc-950/20 flex items-start gap-4">
               <div className="p-3.5 rounded-xl bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-emerald-600 dark:text-emerald-400 flex items-center justify-center">
                 <FiFileText className="w-5 h-5" />
               </div>
               <div>
                 <h4 className="font-display font-semibold text-zinc-800 dark:text-white text-sm">View Resume</h4>
-                <p className="text-sm text-zinc-650 dark:text-zinc-400 mt-1">
-                  <a href="/images/!CV Ghanashyam Panda.pdf" target="_blank" rel="noopener noreferrer" className="hover:text-emerald-650 dark:hover:text-emerald-400 transition-colors duration-300 font-medium underline underline-offset-4">
+                <p className="text-sm text-zinc-600 dark:text-zinc-400 mt-1">
+                  <a href="/images/new CV.pdf" target="_blank" rel="noopener noreferrer" className="hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors duration-300 font-medium underline underline-offset-4">
                     Open PDF File
                   </a>
                 </p>
@@ -164,7 +164,7 @@ export default function Contact() {
                   href="https://docs.google.com/forms/d/e/1FAIpQLSct9tOyDE8QJuuimUe-ecJ-exKwoYtIGR7oH9q0Qpib8WG3Pg/viewform?usp=sf_link"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-4 py-2 border border-zinc-200 dark:border-zinc-850 bg-white dark:bg-zinc-950/60 text-xs font-mono font-semibold text-zinc-550 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white rounded-lg transition-all duration-300"
+                  className="px-4 py-2 border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900/60 text-xs font-mono font-semibold text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white rounded-lg transition-all duration-300"
                 >
                   Use Google Form Instead
                 </a>
@@ -181,7 +181,7 @@ export default function Contact() {
                     value={form.name}
                     onChange={(e) => handleInputChange('name', e.target.value)}
                     placeholder=" "
-                    className={`peer w-full px-4 py-4 bg-zinc-100/65 dark:bg-zinc-955/30 border ${
+                    className={`peer w-full px-4 py-4 bg-zinc-100/60 dark:bg-zinc-900/50 border ${
                       errors.name ? 'border-red-500/50 focus:border-red-500' : 'border-zinc-200 dark:border-zinc-800 focus:border-blue-500/50'
                     } rounded-xl text-sm placeholder-transparent text-zinc-900 dark:text-white focus:outline-none focus:bg-white focus:dark:bg-zinc-900/40 transition-all duration-300`}
                   />
@@ -202,7 +202,7 @@ export default function Contact() {
                     value={form.email}
                     onChange={(e) => handleInputChange('email', e.target.value)}
                     placeholder=" "
-                    className={`peer w-full px-4 py-4 bg-zinc-100/65 dark:bg-zinc-955/30 border ${
+                    className={`peer w-full px-4 py-4 bg-zinc-100/60 dark:bg-zinc-900/50 border ${
                       errors.email ? 'border-red-500/50 focus:border-red-500' : 'border-zinc-200 dark:border-zinc-800 focus:border-blue-500/50'
                     } rounded-xl text-sm placeholder-transparent text-zinc-900 dark:text-white focus:outline-none focus:bg-white focus:dark:bg-zinc-900/40 transition-all duration-300`}
                   />
@@ -223,7 +223,7 @@ export default function Contact() {
                     value={form.subject}
                     onChange={(e) => handleInputChange('subject', e.target.value)}
                     placeholder=" "
-                    className={`peer w-full px-4 py-4 bg-zinc-100/65 dark:bg-zinc-955/30 border ${
+                    className={`peer w-full px-4 py-4 bg-zinc-100/60 dark:bg-zinc-900/50 border ${
                       errors.subject ? 'border-red-500/50 focus:border-red-500' : 'border-zinc-200 dark:border-zinc-800 focus:border-blue-500/50'
                     } rounded-xl text-sm placeholder-transparent text-zinc-900 dark:text-white focus:outline-none focus:bg-white focus:dark:bg-zinc-900/40 transition-all duration-300`}
                   />
@@ -244,7 +244,7 @@ export default function Contact() {
                     value={form.message}
                     onChange={(e) => handleInputChange('message', e.target.value)}
                     placeholder=" "
-                    className={`peer w-full px-4 py-4 bg-zinc-100/65 dark:bg-zinc-955/30 border ${
+                    className={`peer w-full px-4 py-4 bg-zinc-100/60 dark:bg-zinc-900/50 border ${
                       errors.message ? 'border-red-500/50 focus:border-red-500' : 'border-zinc-200 dark:border-zinc-800 focus:border-blue-500/50'
                     } rounded-xl text-sm placeholder-transparent text-zinc-900 dark:text-white focus:outline-none focus:bg-white focus:dark:bg-zinc-900/40 transition-all duration-300 resize-none`}
                   />

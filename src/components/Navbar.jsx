@@ -81,12 +81,19 @@ export default function Navbar({ theme, onToggleTheme }) {
             e.preventDefault()
             handleNavClick('home')
           }}
-          className="relative text-2xl font-bold font-display tracking-tight text-zinc-900 dark:text-white group"
+          className="relative text-2xl font-bold font-display tracking-tight text-zinc-900 dark:text-white group flex items-center gap-2.5"
         >
-          <span className="bg-gradient-to-r from-blue-600 to-cyan-600 dark:from-blue-400 dark:to-cyan-400 bg-clip-text text-transparent group-hover:from-cyan-500 group-hover:to-purple-500 transition-all duration-300">
-            Ghanashyam
-          </span>
-          <span className="text-zinc-700 dark:text-white ml-1">Panda</span>
+          <img 
+            src="/images/logo.jpg" 
+            alt="GP Logo" 
+            className="w-8 h-8 rounded-lg object-cover border border-zinc-200/50 dark:border-zinc-800/50 shadow-sm transition-transform duration-300 group-hover:scale-105"
+          />
+          <div className="flex items-center">
+            <span className="bg-gradient-to-r from-blue-600 to-cyan-600 dark:from-blue-400 dark:to-cyan-400 bg-clip-text text-transparent group-hover:from-cyan-500 group-hover:to-purple-500 transition-all duration-300">
+              Ghanashyam
+            </span>
+            <span className="text-zinc-700 dark:text-white ml-1">Panda</span>
+          </div>
         </a>
 
         {/* Desktop Navigation Links */}
@@ -98,7 +105,7 @@ export default function Navbar({ theme, onToggleTheme }) {
               className={`relative px-4 py-2 text-sm font-medium font-poppins rounded-lg transition-all duration-300 ${
                 activeSection === link.id
                   ? 'text-blue-600 dark:text-blue-400'
-                  : 'text-zinc-550 dark:text-zinc-400 hover:text-zinc-950 dark:hover:text-white'
+                  : 'text-zinc-500 dark:text-zinc-400 hover:text-zinc-950 dark:hover:text-white'
               }`}
             >
               {link.label}

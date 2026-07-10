@@ -4,29 +4,49 @@ import { FiDownload, FiMapPin, FiAward, FiCalendar } from 'react-icons/fi'
 export default function Timeline() {
   const education = [
     {
+      date: '2024-2026',
+      degree: 'Master of Computer Applications (MCA)',
+      institution: 'Trident Academy of Technology, Bhubaneswar, Odisha',
+      details: [
+        { label: 'CGPA', value: '8.11' },
+        { label: 'Grade', value: 'First Distinction' },
+      ],
+      description: 'Specialized in advanced software engineering, artificial intelligence, cloud computing, full-stack web development, and modern database systems through industry-oriented projects and research.'
+    },
+    {
       date: '2021-2024',
-      degree: 'Bachelor’s of Information, Technology and Management',
+      degree: 'Bachelor of Information Technology and Management',
       institution: 'Lakshya Institute of Technology, Bhubaneswar, Odisha',
       details: [
         { label: 'CGPA', value: '7.52' },
-        { label: 'Grade', value: 'First distinction' },
+        { label: 'Grade', value: 'First Distinction' },
       ],
-      description: 'Acquired practical exposure to computer science fundamentals, web systems design, cloud architectures, and database administration via project-driven courses.'
+      description: 'Built a strong foundation in programming, data structures, database management, web technologies, networking, and software development while completing multiple practical projects.'
     },
     {
       date: '2019-2021',
       degree: 'Higher Secondary School (Science)',
       institution: 'Sri Aurobindo Science College, Cuttack, Odisha',
       details: [
-        { label: 'Percentage', value: '74.50%' },
-        { label: 'Grade', value: 'First distinction' },
+        { label: 'Per', value: '74.50%' },
+        { label: 'Grade', value: 'First Distinction' },
       ],
-      description: 'Concentrated in mathematics, physics, chemistry, and computer applications.'
+      description: 'Studied Physics, Chemistry, Mathematics, and Computer Science, developing analytical thinking and quantitative problem-solving skills for higher technical education.'
+    },
+    {
+      date: '2016-2017',
+      degree: 'Board of Secondary Education (BSE), Odisha',
+      institution: 'Tarini Bidyapitha, Ghatagaon, Keonjhar, Odisha',
+      details: [
+        { label: 'Per', value: '70%' },
+        { label: 'Grade', value: 'First Distinction' },
+      ],
+      description: 'Completed secondary education with a strong academic foundation in mathematics, science, and language studies while actively participating in extracurricular and co-curricular activities.'
     }
   ]
 
   return (
-    <section id="resume-section" className="py-24 relative overflow-hidden bg-zinc-50/50 dark:bg-zinc-955/20">
+    <section id="resume-section" className="py-24 relative overflow-hidden bg-zinc-50/50 dark:bg-zinc-900/20">
       {/* Aurora glow shape decoration */}
       <div className="absolute top-1/4 right-0 w-[400px] h-[400px] rounded-full bg-purple-500/5 blur-[120px] pointer-events-none" />
 
@@ -73,7 +93,7 @@ export default function Timeline() {
                       isEven ? 'md:text-left' : 'md:text-right'
                     }`}
                   >
-                    <div className="p-8 rounded-3xl glass border border-zinc-200 dark:border-zinc-800 bg-white/80 dark:bg-zinc-955/40 hover:border-purple-500/35 transition-all duration-500 hover:-translate-y-1 shadow-lg shadow-black/5 dark:shadow-black/20 group flex flex-col justify-between h-full">
+                    <div className="p-8 rounded-3xl glass border border-zinc-200 dark:border-zinc-800 bg-white/80 dark:bg-zinc-900/40 hover:border-purple-500/35 transition-all duration-500 hover:-translate-y-1 shadow-lg shadow-black/5 dark:shadow-black/20 group flex flex-col justify-between h-full">
                       <div>
                         {/* Date badge */}
                         <div className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-purple-500/10 text-purple-600 dark:text-purple-400 font-mono text-xs font-semibold mb-4 ${
@@ -133,8 +153,8 @@ export default function Timeline() {
           className="flex justify-center mt-20"
         >
           <a
-            href="/images/!CV Ghanashyam Panda.pdf"
-            download="Ghanashyam_Panda_CV.pdf"
+            href="/images/new CV.pdf"
+            download="new CV.pdf"
             className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-purple-600 to-blue-500 hover:from-purple-500 hover:to-blue-400 text-white font-poppins text-sm font-semibold tracking-wider uppercase rounded-xl shadow-lg shadow-purple-500/20 hover:shadow-purple-400/30 hover:scale-105 transition-all duration-300 group"
           >
             <FiDownload className="group-hover:translate-y-0.5 transition-transform duration-300" />

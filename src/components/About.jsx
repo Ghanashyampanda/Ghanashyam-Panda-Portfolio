@@ -85,24 +85,24 @@ function SkillBar({ name, percentage }) {
 
 export default function About() {
   const personalDetails = [
-    { label: 'Profile', value: 'Software Developer & Application Developer', icon: <FiLayers className="text-blue-600 dark:text-blue-400" /> },
-    { label: 'Domain', value: 'JAVA, AWS Cloud Foundation, DevOps & Digital Marketing', icon: <FiCode className="text-cyan-600 dark:text-cyan-400" /> },
-    { label: 'Education', value: 'Bachelor’s of Information, Technology and Management', icon: <FiBookOpen className="text-purple-600 dark:text-purple-400" /> },
-    { label: 'Language', value: 'English, Hindi', icon: <FiActivity className="text-emerald-600 dark:text-emerald-400" /> },
+    { label: 'Profile', value: 'FullStack Developer, Software Developer, Application Developer, Cloud Engineer,SDE', icon: <FiLayers className="text-blue-600 dark:text-blue-400" /> },
+    { label: 'Domain', value: 'JAVA, Python, Node.js, REST APIs, MySQL, PHP, JavaScript, React.js, Express.js, MongoDB, Computer Networking, OpenAI API, Prompt Engineering, AI Chatbots, LLM Integration, Document Intelligence', icon: <FiCode className="text-cyan-600 dark:text-cyan-400" /> },
+    { label: 'Education', value: 'Masters of Computer Applications(MCA)', icon: <FiBookOpen className="text-purple-600 dark:text-purple-400" /> },
+    { label: 'Language', value: 'English, Hindi, Odia', icon: <FiActivity className="text-emerald-600 dark:text-emerald-400" /> },
   ]
 
   const secondaryDetails = [
     { label: 'Address', value: 'Bhubaneswar, Odisha, India' },
     { label: 'Tools', value: 'Github, IntelliJ IDEA, VS Code & Android Studio' },
-    { label: 'Other Skills', value: 'Cloud, Excel, Git, Google Analytics & SEO' },
+    { label: 'Other Skills', value: 'AWS Cloud (EC2, S3, IAM, RDS, VPC), Excel, Git, Google Analytics, DevOps & Digital Marketing, & SEO' },
     { label: 'Interest', value: 'Playing Cricket, Web Surfing, Watch Cricket Match & Movie' },
   ]
 
   const stats = [
     { label: 'Achievements', value: 5 },
-    { label: 'Projects', value: 20 },
-    { label: 'Mentored Students', value: 1 },
-    { label: 'Cups of Coffee', value: 10 },
+    { label: 'Projects', value: 17 },
+    { label: 'Mentored Students', value: 9 },
+    { label: 'Cups of Coffee', value: 4 },
   ]
 
   return (
@@ -131,7 +131,7 @@ export default function About() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-              className="p-8 rounded-3xl glass border border-zinc-200 dark:border-zinc-800 bg-white/80 dark:bg-zinc-955/20 h-full flex flex-col justify-between"
+              className="p-8 rounded-3xl glass border border-zinc-200 dark:border-zinc-800 bg-white/80 dark:bg-zinc-900/20 h-full flex flex-col justify-between"
             >
               <div>
                 <h3 className="text-2xl font-bold font-display text-zinc-900 dark:text-white mb-6 flex items-center gap-3">
@@ -144,10 +144,18 @@ export default function About() {
 
               {/* Skills Bars */}
               <div className="mt-4">
-                <SkillBar name="JAVA" percentage={90} />
-                <SkillBar name="WEB Development" percentage={85} />
-                <SkillBar name="SQL" percentage={60} />
-                <SkillBar name="PHP" percentage={80} />
+                <SkillBar name="JAVA" percentage={85} />
+                <SkillBar name="JAVASCRIPT" percentage={80} />
+                <SkillBar name="PYTHON" percentage={70} />
+                <SkillBar name="React.js" percentage={60} />
+                <SkillBar name="Node.js" percentage={60} />
+                <SkillBar name="MySQL" percentage={65} />
+                <SkillBar name="Express.js" percentage={60} />
+                <SkillBar name="AWS (EC2, S3, IAM, RDS, VPC)" percentage={55} />
+                <SkillBar name="MongoDB" percentage={80} />
+                <SkillBar name="GitHub" percentage={90} />
+                <SkillBar name="Git" percentage={85} />
+                <SkillBar name="VS Code" percentage={80} />
                 <SkillBar name="Android Studio" percentage={40} />
               </div>
             </motion.div>
@@ -161,7 +169,7 @@ export default function About() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="p-8 rounded-3xl glass border border-zinc-200 dark:border-zinc-800 bg-white/80 dark:bg-zinc-955/20"
+              className="p-8 rounded-3xl glass border border-zinc-200 dark:border-zinc-800 bg-white/80 dark:bg-zinc-900/20"
             >
               <h3 className="text-2xl font-bold font-display text-zinc-900 dark:text-white mb-6">
                 Technical Profile
@@ -189,6 +197,56 @@ export default function About() {
                     <h4 className="text-xs font-mono uppercase text-zinc-500 font-bold">{detail.label}</h4>
                     <p className="text-sm text-zinc-700 dark:text-zinc-300 font-poppins mt-1">{detail.value}</p>
                   </div>
+                ))}
+              </div>
+            </motion.div>
+
+            {/* Internship Experience Card */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.25 }}
+              className="p-8 rounded-3xl glass border border-zinc-200 dark:border-zinc-800 bg-white/80 dark:bg-zinc-900/20"
+            >
+              <div className="flex justify-between items-start flex-wrap gap-2 mb-4">
+                <div>
+                  <span className="text-xs font-mono font-bold text-blue-600 dark:text-cyan-400 uppercase tracking-widest">
+                    Experience
+                  </span>
+                  <h3 className="text-xl font-bold font-display text-zinc-900 dark:text-white mt-1">
+                    SDE Intern
+                  </h3>
+                  <p className="text-sm font-semibold text-zinc-700 dark:text-zinc-300 font-poppins mt-0.5">
+                    Sparkradix Technologics
+                  </p>
+                </div>
+                <span className="text-xs font-mono font-bold bg-blue-500/10 text-blue-600 dark:text-cyan-400 px-3.5 py-1.5 rounded-full shrink-0">
+                  July 2025 – Nov 2025
+                </span>
+              </div>
+
+              <div className="h-[1px] bg-zinc-200/80 dark:bg-zinc-800/80 my-4" />
+
+              <ul className="space-y-3">
+                {[
+                  'Developed and deployed 2 full-stack intern projects, applying React and Tailwind CSS to build responsive, user-friendly interfaces.',
+                  'Integrated JSON-based APIs to fetch and render 300+ movie records, enabling real-time content updates with 99% accuracy.',
+                  'Enhanced performance by optimising reusable React components, reducing re-render time by 30% and improving load speed.'
+                ].map((bullet, index) => (
+                  <li key={index} className="flex gap-3 text-sm text-zinc-600 dark:text-zinc-405 leading-relaxed font-sans items-start">
+                    <span className="w-1.5 h-1.5 rounded-full bg-blue-500 dark:bg-cyan-400 shrink-0 mt-2" />
+                    <span>{bullet}</span>
+                  </li>
+                ))}
+              </ul>
+              
+              {/* Tech tags */}
+              <div className="flex flex-wrap gap-2 mt-5">
+                {['React', 'Node.js', 'Express', 'Tailwind CSS', 'JSON'].map((tech) => (
+                  <span key={tech} className="text-[10px] font-mono bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-zinc-650 dark:text-zinc-400 px-2 py-0.5 rounded-md">
+                    {tech}
+                  </span>
                 ))}
               </div>
             </motion.div>
@@ -230,12 +288,12 @@ export default function About() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: idx * 0.1 }}
-              className="p-6 rounded-2xl glass border border-zinc-200 dark:border-zinc-800 bg-white/60 dark:bg-zinc-955/20 flex flex-col items-center justify-center text-center group hover:border-blue-500/20 transition-all duration-500"
+              className="p-6 rounded-2xl glass border border-zinc-200 dark:border-zinc-800 bg-white/60 dark:bg-zinc-900/20 flex flex-col items-center justify-center text-center group hover:border-blue-500/20 transition-all duration-500"
             >
               <div className="text-4xl md:text-5xl font-mono font-extrabold text-zinc-800 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-500">
                 <AnimatedCounter end={stat.value} />
               </div>
-              <div className="text-xs font-mono text-zinc-550 dark:text-zinc-400 uppercase tracking-widest mt-2">
+              <div className="text-xs font-mono text-zinc-500 dark:text-zinc-400 uppercase tracking-widest mt-2">
                 {stat.label}
               </div>
             </motion.div>
