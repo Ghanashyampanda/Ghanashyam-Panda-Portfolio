@@ -116,16 +116,25 @@ function ProjectCard({ project }) {
 }
 
 export default function Projects() {
-  const categories = ['All', 'Java', 'PHP', 'Full Stack(MERN)', 'Python']
+  const categories = ['All', 'Java', 'PHP', 'FullStack(MERN)', 'Python']
 
   const projects = [
+    
     {
       title: 'Bakery Supply Management System',
       category: 'PHP',
       tags: ['Laravel', 'MySQL', 'jQuery', 'Bootstrap'],
       description: 'An enterprise-level supply chain and sales tracking dashboard tailored for bakeries. Manages distribution logs, stock level indicators, client invoices, and payment tracking.',
       image: '/images/proj_1.png',
-      url: 'https://sites.google.com/view/codetrails/project/php-codesource/3?authuser=0'
+      url: 'https://github.com/Ghanashyampanda/Bakery-Supply-Management_web_developement-project.git'
+    },
+    {
+      title: 'Promote Eco Cultural Tourism in Odisha',
+      category: 'FullStack(MERN)',
+      tags: ['Next.js', 'Tailwind CSS', 'Shadcn UI', 'Google Maps API', 'Google Gemini AI', 'Json','HTML5', 'CSS3', 'JavaScript','Google Cloud'],
+      description: 'A modern, photo-first web application designed to showcase the rich cultural and ecological heritage of Odisha, featuring an interactive attractions map and an AI-powered itinerary builder.',
+      image: '/images/proj_6.png',
+      url: 'https://github.com/Ghanashyampanda/odishaexplorer.git'
     },
     {
       title: 'Fees Management System',
@@ -133,7 +142,7 @@ export default function Projects() {
       tags: ['AWT', 'Swing', 'JDBC', 'MySQL'],
       description: 'A desktop application supporting academic billing departments. Tracks student dues, generates customizable payment receipt logs, and audits monthly collection stats.',
       image: '/images/proj_2.png',
-      url: 'https://sites.google.com/view/codetrails/project/php-codesource/3?authuser=0'
+      url: 'https://github.com/Ghanashyampanda/Fees-Managment-System-in-java.git'
     },
     {
       title: 'YouTube Clone',
@@ -141,7 +150,7 @@ export default function Projects() {
       tags: ['HTML5', 'CSS3', 'JavaScript', 'Responsive UI'],
       description: 'A pixel-perfect user interface clone of the YouTube desktop streaming application. Employs modern grid systems, interactive drawer controls, and custom video card hover items.',
       image: '/images/proj_3.png',
-      url: 'https://sites.google.com/view/codetrails/project/web-developement-codesource/4?authuser=0'
+      url: 'https://github.com/Ghanashyampanda/Youtube-Clone-Web-Developement.git'
     },
     {
       title: 'Content Management System',
@@ -149,7 +158,7 @@ export default function Projects() {
       tags: ['Laravel', 'MySQL', 'Blade Engine', 'SEO'],
       description: 'A high-performance CMS providing robust post drafting, tag sorting, modular page editing, customizable layouts, and comprehensive search indices.',
       image: '/images/proj_4.png',
-      url: 'https://sites.google.com/view/codetrails/project/php-codesource/2?authuser=0'
+      url: 'https://github.com/Ghanashyampanda/Content-Management-Tool.git'
     },
     {
       title: 'Simple Quiz App',
@@ -157,8 +166,24 @@ export default function Projects() {
       tags: ['Tkinter', 'JSON', 'PyMySQL', 'Database UI'],
       description: 'An interactive quiz environment built in Python. Supports dynamic question loading from JSON formats, user timing parameters, and automated score boards synced to MySQL database.',
       image: '/images/proj_5.jpg',
-      url: 'https://sites.google.com/view/codetrails/project/python-codesource/1?authuser=0'
-    }
+      url: 'https://github.com/Ghanashyampanda/Simple-Quiz-App-python.git'
+    },
+    {
+      title: 'Sunstroke Detection Emergency Alert System App',
+      category: 'FullStack(MERN)',
+      tags: ['Next.js', 'Firebase', 'Google Genkit', 'Tailwind CSS', 'Framer Motion',"JSON","Google Cloud",'HTML5', 'CSS3', 'JavaScript'],
+      description: 'An advanced heat-safety platform utilizing biometric analysis and real-time environmental telemetry to protect users from heat-related emergencies. Integrates Google Genkit for AI stability assessments and automated alerts.',
+      image: '/images/proj_7.png',
+      url: 'https://github.com/Ghanashyampanda/Sunstroke-Detection-Emergency-Alert-System-App.git'
+    },
+    {
+      title: 'Learning Assistant using AI',
+      category: 'FullStack(MERN)',
+      tags: ['React', 'NodeJS', 'Express', 'MongoDB', 'Google Gemini AI', 'JWT','HTML5', 'CSS3', 'JavaScript'],
+      description: 'An AI-powered learning assistant app featuring PDF document parsing, automated smart flashcards generation, interactive quizzes, and a Gemini-powered document chat assistant.',
+      image: '/images/proj_8.png',
+      url: 'https://github.com/Ghanashyampanda/Learning-Assistant-using-AI.git'
+    },
   ]
 
   const [activeCategory, setActiveCategory] = useState('All')
