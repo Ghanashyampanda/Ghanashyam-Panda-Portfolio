@@ -119,7 +119,54 @@ export default function Projects() {
   const categories = ['All', 'Java', 'PHP', 'FullStack(MERN)', 'Python']
 
   const projects = [
-    
+    {
+      title: 'BREAST CANCER DETECTION',
+      category: 'Python',
+      tags: ['Python', 'Scikit-Learn', 'Pandas', 'NumPy', 'Jupyter'],
+      description: 'An advanced machine learning system designed to classify breast tumors as benign or malignant by analyzing clinical features. Uses supervised learning classifiers to achieve high accuracy.',
+      image: '/images/proj_9.png',
+      url: 'https://github.com/Ghanashyampanda/BREAST-CANCER-DETECTION.git'
+    },
+    {
+      title: 'AI Fake News Detector',
+      category: 'Python',
+      tags: ['Python', 'Flask', 'Tensorflow', 'Keras', 'Scikit-Learn', 'Jupyter'],
+      description: 'An AI-powered application designed to assist in the early detection of fake news using advanced machine learning algorithms and predictive modeling.',
+      image: '/images/proj_10.png',
+      url: 'https://github.com/Ghanashyampanda/ai-fake-news-detector.git'
+    },
+    {
+      title: 'Railway Management System',
+      category: 'FullStack(MERN)',
+      tags: ['Next.js', 'Firebase', 'Tailwind CSS', 'Framer Motion', 'React','HTML5', 'CSS3', 'JavaScript', 'Next Auth'],
+      description: 'A modern railway ticketing and management platform featuring real-time train tracking, ticket reservations, passenger dashboards, and an admin control panel.',
+      image: '/images/proj_11.png',
+      url: 'https://github.com/Ghanashyampanda/railwaymanagementsystems.git'
+    },
+    {
+      title: 'Diabetes Prediction using AI/ML',
+      category: 'Python',
+      tags: ['Python', 'Machine Learning', 'Flask', 'Scikit-Learn', 'Pandas'],
+      description: 'A predictive machine learning system that analyzes medical health parameters (such as glucose levels, blood pressure, BMI, etc.) to estimate diabetes risk with high accuracy.',
+      image: '/images/proj_12.png',
+      url: 'https://github.com/Ghanashyampanda/Diabetes_Prediction-AI_ML--task---1.git'
+    },
+    {
+      title: 'Supply Management System',
+      category: 'PHP',
+      tags: ['Laravel', 'PHP', 'MySQL', 'Bootstrap', 'jQuery','HTML5', 'CSS3', 'JavaScript'],
+      description: 'A supply chain dashboard providing inventory monitoring, distribution logs, vendor data, and automated stock level alerts.',
+      image: '/images/proj_13.png',
+      url: 'https://github.com/Ghanashyampanda/Supply-Management-system.git'
+    },
+    {
+      title: 'Car Price Predictor with ML',
+      category: 'Python',
+      tags: ['Python', 'Machine Learning', 'Regression Models', 'Pandas', 'Flask'],
+      description: 'A machine learning web tool that predicts the fair market resale price of used cars based on mileage, model year, fuel type, and brand characteristics.',
+      image: '/images/proj_14.png',
+      url: 'https://github.com/Ghanashyampanda/CAR-PRICE-Predictor-with-ML--task-2-.git'
+    },
     {
       title: 'Bakery Supply Management System',
       category: 'PHP',
@@ -145,6 +192,14 @@ export default function Projects() {
       url: 'https://github.com/Ghanashyampanda/Fees-Managment-System-in-java.git'
     },
     {
+      title: 'Library Management System',
+      category: 'Java',
+      tags: ['JavaFX', 'JFoenix', 'Apache Derby', 'GSon', 'Material Design'],
+      description: 'A library management desktop application built with JavaFX and JFoenix Material Design components. Uses Apache Derby database for offline storage, supporting book checkouts, member profiles, and tracking due dates.',
+      image: '/images/proj_15.png',
+      url: 'https://github.com/Ghanashyampanda/Library-Management-in-Java.git'
+    },
+    {
       title: 'YouTube Clone',
       category: 'Web',
       tags: ['HTML5', 'CSS3', 'JavaScript', 'Responsive UI'],
@@ -155,7 +210,7 @@ export default function Projects() {
     {
       title: 'Content Management System',
       category: 'PHP',
-      tags: ['Laravel', 'MySQL', 'Blade Engine', 'SEO'],
+      tags: ['Laravel', 'MySQL', 'Blade Engine', 'SEO','HTML5', 'CSS3', 'JavaScript'],
       description: 'A high-performance CMS providing robust post drafting, tag sorting, modular page editing, customizable layouts, and comprehensive search indices.',
       image: '/images/proj_4.png',
       url: 'https://github.com/Ghanashyampanda/Content-Management-Tool.git'
@@ -163,7 +218,7 @@ export default function Projects() {
     {
       title: 'Simple Quiz App',
       category: 'Python',
-      tags: ['Tkinter', 'JSON', 'PyMySQL', 'Database UI'],
+      tags: ['Tkinter', 'JSON', 'PyMySQL', 'Database UI','HTML5', 'CSS3', 'JavaScript'],
       description: 'An interactive quiz environment built in Python. Supports dynamic question loading from JSON formats, user timing parameters, and automated score boards synced to MySQL database.',
       image: '/images/proj_5.jpg',
       url: 'https://github.com/Ghanashyampanda/Simple-Quiz-App-python.git'
