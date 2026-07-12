@@ -117,7 +117,7 @@ export default function Contact() {
               <div>
                 <h4 className="font-display font-semibold text-zinc-800 dark:text-white text-sm">Contact Number</h4>
                 <p className="text-sm text-zinc-600 dark:text-zinc-400 mt-1">
-                  <a href="tel://0101010101" className="hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors duration-300 font-medium">+ 0 101 0101 101</a>
+                  <a href="tel://6370825302" className="hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors duration-300 font-medium">+91 6370825302</a>
                 </p>
               </div>
             </div>

@@ -179,13 +179,14 @@ export default function Hero() {
           
           {/* Main profile frame */}
           <div className="relative group w-[280px] h-[280px] md:w-[350px] md:h-[350px] rounded-3xl p-[2px] animate-shimmer-border overflow-hidden shadow-2xl shadow-blue-500/5 dark:shadow-blue-500/10">
-            <div className="w-full h-full rounded-3xl bg-white dark:bg-[#09090b] overflow-hidden relative">
+            <div className="w-full h-full rounded-[22px] bg-white dark:bg-[#09090b] overflow-hidden relative">
               <img 
                 src="/images/about-me.jpg" 
                 alt="Ghanashyam Panda" 
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                className="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-110 dark:brightness-[0.9] dark:contrast-[1.05]"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/20 dark:from-[#09090b]/80 via-transparent to-transparent opacity-60" />
+              {/* Premium gradient overlay to fade white background into the dark/light theme */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/40 dark:from-[#09090b] via-transparent to-black/10 dark:to-[#09090b]/40 opacity-70 dark:opacity-85 transition-opacity duration-500 group-hover:opacity-60" />
             </div>
           </div>
         </motion.div>
